@@ -2,5 +2,8 @@
     <Label class="action-bar-title" text="Home"></Label>
 </ActionBar>
 
-<GridLayout class="page">
-</GridLayout>
+<StackLayout class="page">
+        <Button text="Get Abundo" (tap)="extractData()" class="button button-success"></Button>
+        <Button text="Every minute" (tap)="localNotificationsHelper.continuous()" class="button button-warning"></Button>
+        <Button text="Cancel" (tap)="localNotificationsHelper.cancelAll()" class="button button-dismiss"></Button>
+</StackLayout>
